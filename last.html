@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="last.css">
+    <title>Remittance Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Remittance Calculator</h1>
+    </header>
+    <main>
+        <label for="payInCountry">Pay From Country:</label>
+        <select id="payInCountry" class="country-dropdown"></select>
+
+        <label for="payOutCountry">Pay To Country:</label>
+        <select id="payOutCountry" class="country-dropdown"></select>
+
+        <label for="payInCurrency">Pay From Currency:</label>
+        <select id="payInCurrency" class="currency-dropdown"></select>
+
+        <label for="payOutCurrency">Pay To Currency:</label>
+        <select id="payOutCurrency" class="currency-dropdown"></select>
+
+        <label for="productType">Product Type:</label>
+        <select id="productType"></select>
+
+        <!-- Remittance Amount Input -->
+        <label for="remittanceAmount">Remittance Amount:</label>
+        <input type="number" id="remittanceAmount" step="0.01" placeholder="Enter amount" required>
+
+        <!-- Button to calculate remittance cost -->
+        <button id="calculateButton">Calculate Remittance Cost</button>
+
+        <!-- Element to display the calculated remittance cost -->
+        <div id="result"></div>
+    </main>
+    <script src="last.js"></script>
+</body>
+</html>

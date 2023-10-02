@@ -1,0 +1,81 @@
+/* Reset some default browser styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Apply styles to the entire page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Style the about container */
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Style headings */
+
+h1,
+h2 {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ff8c00;
+}
+
+h2 {
+    color: #ffffff;
+    background-color: #ff8c00;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.mission,
+.highlights,
+.stories,
+.join-family {
+    margin-bottom: 30px;
+}
+
+.highlights ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.highlights li {
+    margin-bottom: 10px;
+}
+
+.join-family p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

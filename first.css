@@ -1,0 +1,145 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-image: url('mee.jpg'); */
+    background-color: #000;
+    color: #fff;
+    background-position: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #FF5100;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 180px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.welcome-text {
+    width: 45%;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #fff;
+    background-size: cover;
+}
+
+.welcome-text p {
+    line-height: 1.5;
+}
+
+.calculator-card-container {
+    width: 10%;
+    max-height: 4cap;
+    position: sticky;
+    top: 20px;
+}
+
+.calculator-card {
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 3px;
+    width: 80%;
+}
+
+h1,
+h2 {
+    color: #f6921e;
+}
+
+h2 form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.calculator-card input[type="number"],
+.calculator-card select,
+.calculator-card button {
+    width: 100%;
+    padding: 5px;
+    margin: 3px 0;
+    border: none;
+    border-radius: 3px;
+}
+
+.calculator-card input[type="number"]#remittanceAmount {
+    width: 50%;
+    padding: 5px;
+}
+
+button {
+    background-color: #f6921e;
+    color: #fff;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #111;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    color: #f6921e;
+}

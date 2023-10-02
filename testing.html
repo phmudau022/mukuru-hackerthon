@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="first.css">
+    <title>Remittance Cost Calculator</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="mukuru.png" alt="Mukuru Calculator Logo" class="logo-img">
+            <h1 class="logo-text">mukuru calculator</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#help">Help</a></li>
+                <li><a href="#login">Log In</a></li>
+                <li><a id="signup-link" href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="welcome-text">
+            <h2>Welcome to Mukuru</h2>
+            <p>Your Trusted Remittance Calculator.</p>
+            <p>Experience the heart of Mukuru, where every transaction shapes stories of care, love, and support. From education to health, we're here to make a difference in your life.</p>
+        </div>
+
+        <section id="calculator" class="calculator-container">
+            <div class="calculator-card">
+                <h2>Exchange Rate</h2>
+                <label for="payInCountry">Pay From Country:</label>
+                <select id="payInCountry" class="country-dropdown"></select>
+
+                <!-- Add the rest of your calculator inputs here -->
+                <label for="payOutCountry">Pay To Country:</label>
+                <select id="payOutCountry" class="country-dropdown"></select>
+
+                <label for="payInCurrency">Pay From Currency:</label>
+                <select id="payInCurrency" class="currency-dropdown"></select>
+
+                <label for="payOutCurrency">Pay To Currency:</label>
+                <select id="payOutCurrency" class="currency-dropdown"></select>
+
+                <label for="productType">Product Type:</label>
+                <select id="productType"></select>
+
+                <label for="remittanceAmount">Remittance Amount:</label>
+                <input type="number" id="remittanceAmount" step="0.01" placeholder="Enter amount" required>
+
+                <!-- Button to calculate remittance cost -->
+                <button id="calculateButton">Calculate Remittance Cost</button>
+
+                <div id="result"></div>
+            </div>
+        </section>
+
+        <section id="countries" class="countries-container">
+            <h2>Countries and Their Codes</h2>
+            <table>
+                <tr>
+                    <th>COUNTRY</th>
+                    <th>CODE</th>
+                </tr>
+                <tr>
+                    <td>ZIMBABWE</td>
+                    <td>ZW</td>
+                </tr>
+                <tr>
+                    <td>SOUTH AFRICA</td>
+                    <td>ZA</td>
+                </tr>
+                <tr>
+                    <td>ZAMBIA</td>
+                    <td>ZM</td>
+                </tr>
+                <!-- Add more countries here -->
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mukuru Calculator. All rights reserved.</p>
+    </footer>
+
+    <script src="test.js"></script>
+    <script src="last.js"></script>
+</body>
+</html>
